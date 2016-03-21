@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTMLHint Report</title>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+<body><div class="container-fluid">
+    <div class="panel panel-warning">
+    <div class="panel-heading" role="tab" id="heading-5">
+        <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-target="#accordion-5" class="clickable">
+          <b>/cases/case3/content.css</b>
+        </a>
+      </h4>
+    </div>
+    <div class="panel-collapse collapse" id="accordion-5" role="tabpanel" aria-labelledby="heading-5">
+        <div class="panel-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th class="text-center">Type</th>
+                        <th class="text-center">Line</th>
+                        <th class="text-center">Column</th>
+                        <th>Evidence</th>
+                        <th>Reason</th>
+                        <th>Rule</th>
+                        <th>Docs</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="warning">
+    <td class="text-center">warning</td>
+    <td class="text-center">1</td>
+    <td class="text-center">1</td>
+    <td><code>wrong-rule {</code></td>
+    <td></td>
+    <td>empty-rules</td>
+    <td><a href="#">reference</a></td>
+</tr><tr class="danger">
+    <td class="text-center">error</td>
+    <td class="text-center">3</td>
+    <td class="text-center">1</td>
+    <td><code>}</code></td>
+    <td></td>
+    <td>errors</td>
+    <td><a href="#">reference</a></td>
+</tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+    <div class="well">
+    Found <span class="label label-default">2</span> failures - <span class="label label-danger">1 errors</span> &amp; <span class="label label-warning">1 warnings</span>
+</div>
+</div>

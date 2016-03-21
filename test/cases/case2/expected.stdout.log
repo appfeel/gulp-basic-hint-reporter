@@ -1,0 +1,4 @@
+JSHINT:                 [33m[1m     3 Warning(s)[22m[39m at [35m/cases/case2/anotherFile.js[39m
+JSHINT: [31m[1m     3 Error(s)[22m[39m [33m[1m     2 Warning(s)[22m[39m at [35m/cases/case2/content.js[39m
+JSHINT: [31m[1m     3 Error(s)[22m[39m [33m[1m     5 Warning(s)[22m[39m
+See extended report at [35m./test/logs/case2.html[39m
