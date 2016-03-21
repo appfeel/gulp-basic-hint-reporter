@@ -4,19 +4,23 @@
     <title>HTMLHint Report</title>
 
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/google/code-prettify/master/styles/desert.css">
     <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <style>.clickable{cursor:pointer;width:100%}.panel{margin-bottom: 0px}.file-header{width:100%;height:30px}.well{margin-bottom:50px}</style>
 </head>
-<body><div class="container-fluid">
+<body>
+    <div class="file-header"></div><div class="container-fluid">
     <div class="panel panel-warning">
-    <div class="panel-heading" role="tab" id="heading-1">
+    <div class="panel-heading" role="tab" id="heading-7">
         <h4 class="panel-title">
-        <a role="button" data-toggle="collapse" data-target="#accordion-1" class="clickable">
-          <b>/cases/case4/content.css</b>
+        <a role="button" data-toggle="collapse" data-target="#accordion-7" class="clickable">
+          <strong>+ /cases/case4/content.css</strong>
         </a>
       </h4>
     </div>
-    <div class="panel-collapse collapse" id="accordion-1" role="tabpanel" aria-labelledby="heading-1">
+    <div class="panel-collapse collapse" id="accordion-7" role="tabpanel" aria-labelledby="heading-7">
         <div class="panel-body">
             <table class="table table-hover">
                 <thead>
@@ -35,7 +39,7 @@
     <td class="text-center">warning</td>
     <td class="text-center">1</td>
     <td class="text-center">1</td>
-    <td><code>wrong-rule {</code></td>
+    <td><pre class="prettyprint">wrong-rule {<br/>^</pre></td>
     <td></td>
     <td>empty-rules</td>
     <td><a href="#">reference</a></td>
@@ -43,7 +47,7 @@
     <td class="text-center">error</td>
     <td class="text-center">3</td>
     <td class="text-center">1</td>
-    <td><code>}</code></td>
+    <td><pre class="prettyprint">}<br/>^</pre></td>
     <td></td>
     <td>errors</td>
     <td><a href="#">reference</a></td>

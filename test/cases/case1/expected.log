@@ -4,15 +4,19 @@
     <title>HTMLHint Report</title>
 
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/google/code-prettify/master/styles/desert.css">
     <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <style>.clickable{cursor:pointer;width:100%}.panel{margin-bottom: 0px}.file-header{width:100%;height:30px}.well{margin-bottom:50px}</style>
 </head>
-<body><div class="container-fluid">
+<body>
+    <div class="file-header"></div><div class="container-fluid">
     <div class="panel panel-warning">
     <div class="panel-heading" role="tab" id="heading-1">
         <h4 class="panel-title">
         <a role="button" data-toggle="collapse" data-target="#accordion-1" class="clickable">
-          <b>/cases/case1/content.html</b>
+          <strong>+ /cases/case1/anotherFile.html</strong>
         </a>
       </h4>
     </div>
@@ -33,9 +37,50 @@
                 <tbody>
                     <tr class="danger">
     <td class="text-center">error</td>
+    <td class="text-center">4</td>
+    <td class="text-center">1</td>
+    <td><pre class="prettyprint">&lt;/head&gt;<br/>^</pre></td>
+    <td>&lt;title&gt; must be present in &lt;head&gt; tag.</td>
+    <td>title-require</td>
+    <td><a href="https://github.com/yaniswang/HTMLHint/wiki/title-require">reference</a></td>
+</tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+    <div class="well">
+    Found <span class="label label-default">1</span> failures - <span class="label label-danger">1 errors</span> &amp; <span class="label label-warning">0 warnings</span>
+</div>
+</div><div class="container-fluid">
+    <div class="panel panel-warning">
+    <div class="panel-heading" role="tab" id="heading-2">
+        <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-target="#accordion-2" class="clickable">
+          <strong>+ /cases/case1/content.html</strong>
+        </a>
+      </h4>
+    </div>
+    <div class="panel-collapse collapse" id="accordion-2" role="tabpanel" aria-labelledby="heading-2">
+        <div class="panel-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th class="text-center">Type</th>
+                        <th class="text-center">Line</th>
+                        <th class="text-center">Column</th>
+                        <th>Evidence</th>
+                        <th>Reason</th>
+                        <th>Rule</th>
+                        <th>Docs</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="danger">
+    <td class="text-center">error</td>
     <td class="text-center">1</td>
     <td class="text-center">1</td>
-    <td><code>&lt;div&gt;This div will be not clos</code></td>
+    <td><pre class="prettyprint">&lt;div&gt;This div will be not closed to enforce an error<br/>^</pre></td>
     <td>Doctype must be declared first.</td>
     <td>doctype-first</td>
     <td><a href="https://github.com/yaniswang/HTMLHint/wiki/doctype-first">reference</a></td>
@@ -43,7 +88,7 @@
     <td class="text-center">error</td>
     <td class="text-center">1</td>
     <td class="text-center">53</td>
-    <td><code>&lt;div&gt;This div will be not clos</code></td>
+    <td><pre class="prettyprint">ot closed to enforce an error<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^</pre></td>
     <td>Tag must be paired.</td>
     <td>tag-pair</td>
     <td><a href="https://github.com/yaniswang/HTMLHint/wiki/tag-pair">reference</a></td>

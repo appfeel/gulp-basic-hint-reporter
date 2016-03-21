@@ -4,19 +4,80 @@
     <title>HTMLHint Report</title>
 
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/google/code-prettify/master/styles/desert.css">
     <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <style>.clickable{cursor:pointer;width:100%}.panel{margin-bottom: 0px}.file-header{width:100%;height:30px}.well{margin-bottom:50px}</style>
 </head>
-<body><div class="container-fluid">
+<body>
+    <div class="file-header"></div><div class="container-fluid">
     <div class="panel panel-warning">
-    <div class="panel-heading" role="tab" id="heading-1">
+    <div class="panel-heading" role="tab" id="heading-5">
         <h4 class="panel-title">
-        <a role="button" data-toggle="collapse" data-target="#accordion-1" class="clickable">
-          <b>test/cases/case3/content.js</b>
+        <a role="button" data-toggle="collapse" data-target="#accordion-5" class="clickable">
+          <strong>+ test/cases/case3/anotherFile.js</strong>
         </a>
       </h4>
     </div>
-    <div class="panel-collapse collapse" id="accordion-1" role="tabpanel" aria-labelledby="heading-1">
+    <div class="panel-collapse collapse" id="accordion-5" role="tabpanel" aria-labelledby="heading-5">
+        <div class="panel-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th class="text-center">Type</th>
+                        <th class="text-center">Line</th>
+                        <th class="text-center">Column</th>
+                        <th>Evidence</th>
+                        <th>Reason</th>
+                        <th>Rule</th>
+                        <th>Docs</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="warning">
+    <td class="text-center">W097</td>
+    <td class="text-center">2</td>
+    <td class="text-center">1</td>
+    <td><pre class="prettyprint">&quot;use strict&quot;;<br/>^</pre></td>
+    <td>Use the function form of &quot;use strict&quot;.</td>
+    <td></td>
+    <td><a href="#">reference</a></td>
+</tr><tr class="warning">
+    <td class="text-center">W030</td>
+    <td class="text-center">6</td>
+    <td class="text-center">4</td>
+    <td><pre class="prettyprint">})();<br/>&nbsp;&nbsp;&nbsp;^</pre></td>
+    <td>Expected an assignment or function call and instead saw an expression.</td>
+    <td></td>
+    <td><a href="#">reference</a></td>
+</tr><tr class="warning">
+    <td class="text-center">W117</td>
+    <td class="text-center">5</td>
+    <td class="text-center">5</td>
+    <td><pre class="prettyprint">    console.log(&quot;AppFeel loves javascript!&quot;);<br/>&nbsp;&nbsp;&nbsp;&nbsp;^</pre></td>
+    <td>&#039;console&#039; is not defined.</td>
+    <td></td>
+    <td><a href="#">reference</a></td>
+</tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+    <div class="well">
+    Found <span class="label label-default">3</span> failures - <span class="label label-danger">0 errors</span> &amp; <span class="label label-warning">3 warnings</span>
+</div>
+</div><div class="container-fluid">
+    <div class="panel panel-warning">
+    <div class="panel-heading" role="tab" id="heading-6">
+        <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-target="#accordion-6" class="clickable">
+          <strong>+ test/cases/case3/content.js</strong>
+        </a>
+      </h4>
+    </div>
+    <div class="panel-collapse collapse" id="accordion-6" role="tabpanel" aria-labelledby="heading-6">
         <div class="panel-body">
             <table class="table table-hover">
                 <thead>
@@ -35,7 +96,7 @@
     <td class="text-center">W024</td>
     <td class="text-center">2</td>
     <td class="text-center">10</td>
-    <td><code>function new func () {</code></td>
+    <td><pre class="prettyprint">function new func () {<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^</pre></td>
     <td>Expected an identifier and instead saw &#039;new&#039; (a reserved word).</td>
     <td></td>
     <td><a href="#">reference</a></td>
@@ -43,7 +104,7 @@
     <td class="text-center">W116</td>
     <td class="text-center">2</td>
     <td class="text-center">14</td>
-    <td><code>function new func () {</code></td>
+    <td><pre class="prettyprint">function new func () {<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^</pre></td>
     <td>Expected &#039;(&#039; and instead saw &#039;func&#039;.</td>
     <td></td>
     <td><a href="#">reference</a></td>
@@ -51,7 +112,7 @@
     <td class="text-center">E030</td>
     <td class="text-center">2</td>
     <td class="text-center">19</td>
-    <td><code>function new func () {</code></td>
+    <td><pre class="prettyprint">function new func () {<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^</pre></td>
     <td>Expected an identifier and instead saw &#039;(&#039;.</td>
     <td></td>
     <td><a href="#">reference</a></td>
@@ -59,7 +120,7 @@
     <td class="text-center">E019</td>
     <td class="text-center">6</td>
     <td class="text-center">25</td>
-    <td><code>function errFunction () {</code></td>
+    <td><pre class="prettyprint">function errFunction () {<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^</pre></td>
     <td>Unmatched &#039;{&#039;.</td>
     <td></td>
     <td><a href="#">reference</a></td>
@@ -67,7 +128,7 @@
     <td class="text-center">E041</td>
     <td class="text-center">8</td>
     <td class="text-center">0</td>
-    <td><code></code></td>
+    <td><pre class="prettyprint"><br/>^</pre></td>
     <td>Unrecoverable syntax error. (100% scanned).</td>
     <td></td>
     <td><a href="#">reference</a></td>
