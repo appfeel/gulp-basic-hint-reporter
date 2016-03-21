@@ -1,6 +1,6 @@
 {
   "name": "gulp-hint-web-reporter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Hint web reporter compatible with htmlhint, jshint, csslint and maybe others",
   "main": "index.js",
   "scripts": {
