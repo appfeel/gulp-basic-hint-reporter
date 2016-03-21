@@ -87,7 +87,7 @@ Forces reporter to fail if errors are found.
 
 ## Release History
 
-* 1.1.4 Improve html reports
+* 1.1.5 Improve html reports
 * 1.1.2 Add travis.yml and readme badges
 * 1.1.0 Add fail option
 * 1.0.0 Initial release
