@@ -38,7 +38,7 @@ var options = {
 ### `logsPath`
 Default: `"./logs"`
 
-The folder to write output files from htmlhint.
+The folder to write output files for hint results.
 
 ### `hinters`
 Default: `["htmlhint", "jshint", "csslint"]`
@@ -49,11 +49,13 @@ Additional hinters (looks in `file[hinter]` for hint results/messages).
 Default: 
 ```json
 {
-    "htmlhint": "htmlhint-" + (new Date().toISOString()) + ".log.html",
-    "jshint":   "jshint-" + (new Date().toISOString()) + ".log.html",
-    "csslint":  "csslint-" + (new Date().toISOString()) + ".log.html"
+    "htmlhint": "htmlhint-{datetime}.log.html",
+    "jshint":   "jshint-{datetime}.log.html",
+    "csslint":  "csslint-{datetime}.log.html"
 }
 ```
+
+Where `{datetime}` is replaced by `new Date().toISOString()`
 
 For each hinter defines the log name. In example, for `jshint` by default looks like: `./logs/jshint-2016-03-15T10:04:44.883Z.log.html`
 
