@@ -57,7 +57,7 @@ Default:
 
 Where `{datetime}` is replaced by `new Date().toISOString()`
 
-For each hinter defines the log name. In example, for `jshint` by default looks like: `./logs/jshint-2016-03-15T10:04:44.883Z.log.html`
+For each hinter defines the log name. In example, by default for `jshint` it looks like: `./logs/jshint-2016-03-15T10:04:44.883Z.log.html`
 
 ### `createMissingFolders`
 Default: `true`
