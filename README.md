@@ -1,6 +1,12 @@
 gulp-hint-web-reporter
 ====================
 
+[![License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://npmjs.org/package/gulp-hint-web-reporter)
+[![NPM version](http://img.shields.io/npm/v/gulp-hint-web-reporter.svg?style=flat)](https://npmjs.org/package/gulp-hint-web-reporter)
+[![NPM version](http://img.shields.io/npm/dm/gulp-hint-web-reporter.svg?style=flat)](https://npmjs.org/package/gulp-hint-web-reporter)
+[![Build Status](http://img.shields.io/travis/appfeel/gulp-hint-web-reporter.svg?style=flat)](https://travis-ci.org/appfeel/gulp-hint-web-reporter)
+[![Dependency Status](http://img.shields.io/gemnasium/appfeel/gulp-hint-web-reporter.svg?style=flat)](https://gemnasium.com/appfeel/gulp-hint-web-reporter)
+
 A simple reporter for [gulp-htmlhint](https://www.npmjs.com/package/gulp-htmlhint), [gulp-jshint](https://www.npmjs.com/package/gulp-jshint) and [gulp-csslint](https://www.npmjs.com/package/gulp-csslint) that writes it's output as a nice console summary and extended web report.
 
 ## Installation
