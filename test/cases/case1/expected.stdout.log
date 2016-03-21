@@ -1,5 +1,4 @@
 HTMLHINT: [31m[1m     1 Error(s)[22m[39m                 at [35m/cases/case1/anotherFile.html[39m
-Creating new report: test/logs/case1.html
 HTMLHINT: [31m[1m     2 Error(s)[22m[39m                 at [35m/cases/case1/content.html[39m
 HTMLHINT: [31m[1m     3 Error(s)[22m[39m                
 See extended report at [35mtest/logs/case1.html[39m
