@@ -68,7 +68,12 @@ If disabled and the given path contains folders which do not exist, an ENOENT er
 ### `showFileSummary`
 Default: `true`
 
-Enables or disables file summary on console (when disabled only a global summary will be shown).
+Enables or disables file summary on console (just a global summary will be shown when disabled).
+
+### `fail`
+Default: `false`
+
+Forces reporter to fail if errors are found.
 
 ## License
 
