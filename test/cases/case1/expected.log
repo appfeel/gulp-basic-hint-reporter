@@ -9,14 +9,14 @@
 </head>
 <body><div class="container-fluid">
     <div class="panel panel-warning">
-    <div class="panel-heading" role="tab" id="heading-2">
+    <div class="panel-heading" role="tab" id="heading-1">
         <h4 class="panel-title">
-        <a role="button" data-toggle="collapse" data-target="#accordion-2" class="clickable">
+        <a role="button" data-toggle="collapse" data-target="#accordion-1" class="clickable">
           <b>/cases/case1/content.html</b>
         </a>
       </h4>
     </div>
-    <div class="panel-collapse collapse" id="accordion-2" role="tabpanel" aria-labelledby="heading-2">
+    <div class="panel-collapse collapse" id="accordion-1" role="tabpanel" aria-labelledby="heading-1">
         <div class="panel-body">
             <table class="table table-hover">
                 <thead>

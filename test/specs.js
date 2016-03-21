@@ -10,6 +10,7 @@ var readFilecontents, getExpected, getExpectedStdout, getOutput, hookStream, ini
     htmlhint = require('gulp-htmlhint'),
     jshint = require('gulp-jshint'),
     csslint = require('gulp-csslint'),
+    plumber = require('gulp-plumber'),
     reporter = require('../'),
     fileWritter = require('../lib/file-writter'),
     casesStdout = {};
@@ -84,8 +85,34 @@ describe('gulp-hint-web-reporter', function() {
         done();
     });
 
-    it('should create log report for html file', function(done) {
+    it('should fail hint', function(done) {
         var caseNbr = 'case1',
+            hookedStream = initCase(caseNbr),
+            isErrorHandlerCalled = false;
+
+        gulp.src('./test/cases/' + caseNbr + '/*.html')
+            .pipe(plumber(function errorHandler(e) {
+                isErrorHandlerCalled = true;
+                finishCase(caseNbr, hookedStream, done);
+            }))
+            .pipe(htmlhint())
+            .pipe(reporter({
+                logsPath: "./test/logs",
+                filenames: {
+                    htmlhint: caseNbr + ".html"
+                },
+                fail: true
+            }))
+            .on('end', function() {
+                hookedStream.unhook();
+                assert(isErrorHandlerCalled, "Plugin should have failed");
+                !isErrorHandlerCalled && done();
+            })
+            .pipe(plumber.stop());
+    });
+
+    it('should create log report for html file', function(done) {
+        var caseNbr = 'case2',
             hookedStream = initCase(caseNbr);
 
         gulp.src('./test/cases/' + caseNbr + '/*.html')
@@ -102,7 +129,7 @@ describe('gulp-hint-web-reporter', function() {
     });
 
     it('should create log report for js file', function(done) {
-        var caseNbr = 'case2',
+        var caseNbr = 'case3',
             hookedStream = initCase(caseNbr);
 
         gulp.src('./test/cases/' + caseNbr + '/*.js')
@@ -119,7 +146,7 @@ describe('gulp-hint-web-reporter', function() {
     });
 
     it('should create log report for css file', function(done) {
-        var caseNbr = 'case3',
+        var caseNbr = 'case4',
             hookedStream = initCase(caseNbr);
 
         gulp.src('./test/cases/' + caseNbr + '/*.css')
