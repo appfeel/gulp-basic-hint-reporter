@@ -1,4 +1,4 @@
 CSSLINT: [31m[1m     1 Error(s)[22m[39m [33m[1m     1 Warning(s)[22m[39m at [35m/cases/case4/content.css[39m
-Creating new report: ./test/logs/case4.html
+Creating new report: test/logs/case4.html
 CSSLINT: [31m[1m     1 Error(s)[22m[39m [33m[1m     1 Warning(s)[22m[39m
-See extended report at [35m/Volumes/DATA/AA-AppFeel/test/logs/case4.html[39m
+See extended report at [35mtest/logs/case4.html[39m

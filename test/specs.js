@@ -97,7 +97,7 @@ describe('gulp-hint-web-reporter', function() {
             }))
             .pipe(htmlhint())
             .pipe(reporter({
-                logsPath: "./test/logs",
+                logsPath: "test/logs",
                 filenames: {
                     htmlhint: caseNbr + ".html"
                 },
@@ -118,7 +118,7 @@ describe('gulp-hint-web-reporter', function() {
         gulp.src('./test/cases/' + caseNbr + '/*.html')
             .pipe(htmlhint())
             .pipe(reporter({
-                logsPath: "./test/logs",
+                logsPath: "test/logs",
                 filenames: {
                     htmlhint: caseNbr + ".html"
                 }
@@ -135,7 +135,7 @@ describe('gulp-hint-web-reporter', function() {
         gulp.src('./test/cases/' + caseNbr + '/*.js')
             .pipe(jshint())
             .pipe(reporter({
-                logsPath: "./test/logs",
+                logsPath: "test/logs",
                 filenames: {
                     jshint: caseNbr + ".html"
                 }
@@ -152,7 +152,7 @@ describe('gulp-hint-web-reporter', function() {
         gulp.src('./test/cases/' + caseNbr + '/*.css')
             .pipe(csslint())
             .pipe(reporter({
-                logsPath: "./test/logs",
+                logsPath: "test/logs",
                 filenames: {
                     csslint: caseNbr + ".html"
                 }
